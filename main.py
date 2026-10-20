@@ -3,6 +3,10 @@ def preparar_texto(frase: str) -> tuple[str, int, int, str]:
     Leer la frase y elimina los espacios de los extremos y convierte el texto a minúsculas. Devuelve el texto preparado.
     recibe el texto preparado y devuelve una tupla con tres datos: número de caracteres —incluidos los espacios interiores—, número de palabras y si contiene la palabra completa "python". Para obtener las palabras, utiliza split().
     :param: frase
+    :return: frase_minuscula
+    :return: contador_palabras
+    :return: contador_caracteres
+    :return: python
     """
     frase_minuscula = frase.strip().lower()
     palabras = frase_minuscula.split()
